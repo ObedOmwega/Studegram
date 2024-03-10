@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Fancy font */
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+.margin-container {
+    margin-top: 50px; /* Green margin at the top */
+    margin-bottom: 50px; /* Green margin at the bottom */
+    margin-left: 30px; /* Yellow margin on the left */
+    margin-right: 30px; /* Yellow margin on the right */
+    background-color: #fff; /* White background within the margins */
+    padding: 20px; /* Padding inside the margin container */
+}
