@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studegram - Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <header>
+    <h1>Sign Up for Studegram</h1>
+  </header>
+  <main>
+    <form id="signup-form" class="signup-form" action="#" method="post">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <label for="username">Username (Optional):</label>
+      <input type="text" id="username" name="username">
+
+      <label for="profile-pic">Profile Picture:</label>
+      <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+
+      <label for="bio">Bio (Optional):</label>
+      <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea>
+
+      <label for="school">School/University Name:</label>
+      <input type="text" id="school" name="school" required>
+
+      <label for="major">Major/Field of Study:</label>
+      <input type="text" id="major" name="major" required>
+
+      <label for="year">Year of Study:</label>
+      <input type="number" id="year" name="year" min="1" required>
+
+      <label for="interests">Areas of Interest:</label>
+      <input type="text" id="interests" name="interests" placeholder="e.g., Science, Literature, Programming">
+
+      <label for="study-goals">Study Goals:</label>
+      <input type="text" id="study-goals" name="study-goals" placeholder="e.g., Preparing for exams, Improving grades">
+
+      <div class="privacy-policy">
+        <input type="checkbox" id="privacy-policy" required>
+        <label for="privacy-policy">I agree to the <a href="#">Privacy Policy</a>.</label>
+      </div>
+
+      <button type="submit" class="signup-btn">Sign Up</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2024 Studegram</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
