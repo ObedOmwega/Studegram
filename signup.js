@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (isValid) {
       // All required fields are filled, proceed with submission
       signUpForm.submit();
+      signUpSuccess(); // Call the success function
     }
   });
 
@@ -31,5 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
       field.style.border = '1px solid #ccc'; // Reset border to default
       field.style.margin = '10px 0'; // Reset margin to default
     });
+  }
+
+  function signUpSuccess() {
+    // Redirect to a new page with success message and emoji
+    window.location.href = 'success.html';
   }
 });
