@@ -1,0 +1,55 @@
+body {
+
+  background-color: #EFDECD/* Blue indigo background */
+
+}
+
+.buttons {
+
+  text-align: center;
+
+  margin-top: 20px;
+
+}
+
+.signup-btn,
+
+.login-btn {
+
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  margin: 0 10px;
+
+  border-radius: 20px;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: background-color 0.3s ease;
+
+}
+
+.signup-btn {
+
+  background: linear-gradient(to right, indigo, violet);
+
+}
+
+.login-btn {
+
+  background: linear-gradient(to right, indigo, blue,  lavender);
+
+}
+
+.signup-btn:hover,
+
+.login-btn:hover {
+
+  background-position: right center;
+
+}
