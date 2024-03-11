@@ -36,6 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function signUpSuccess() {
     // Redirect to a new page with success message and emoji
-    window.location.href = 'success.html';
+    window.location.href = 'successful.html';
   }
 });
