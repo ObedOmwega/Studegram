@@ -64,7 +64,8 @@ textarea {
   ); /* Gradient background */
 
   color: #fff; /* Text color */
-  
+  font-family: Montserrat, sans-serif; /* Font family */
+  cursor: pointer;
 transition: background-color 0.3s; /* Smooth transition */
 
   margin: 10px 0; /* Single-edge margin */
