@@ -67,8 +67,3 @@ textarea {
   margin: 10px 0; /* Single-edge margin */
 }
 
-.profile-picture {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* Circular shape */
-}
