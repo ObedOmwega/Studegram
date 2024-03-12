@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Studegram - Sign Up</title>
   <link rel="stylesheet" href="signup.css">
+  <style>
+    body {
+      background-image: url('smiling_students.jpg');
+      background-size: cover;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -26,9 +32,6 @@
 
       <label for="username">Username (Optional):</label>
       <input type="text" id="username" name="username">
-
-      <label for="profile-pic">Profile Picture:</label>
-      <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
 
       <label for="bio">Bio (Optional):</label>
       <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea>
@@ -55,6 +58,7 @@
 
       <button type="submit" class="signup-btn">Sign Up</button>
     </form>
+    <button onclick="location.href='login.html'" class="login-btn">Login</button>
   </main>
   <footer>
     <p>&copy; 2024 Studegram</p>
