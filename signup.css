@@ -3,7 +3,7 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
-  background-image: url('https://i.postimg.cc/kgWh7twg/Screenshot-2024-03-12-19-09-07-557-com-microsoft-bing-edit-2-1.jpg.jpg');
+  background-image: url('https://ibb.co/GHxpVXP.jpg');
   background-size: cover;
 }
 
@@ -17,10 +17,10 @@ h1 {
 }
 
 main {
-  max-width: 800px; /* Increased max-width for better alignment */
+  max-width: 600px;
   margin: 20px auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9); /* Added transparency to the background color */
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -38,33 +38,29 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="file"],
-input[type="number"],
 textarea {
-  width: calc(100% - 20px); /* Adjusted width to account for padding */
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 8px; /* slightly rounded edges */
 }
 
 textarea {
   resize: vertical;
 }
 
-.signup-btn,
-.login-btn {
-  width: calc(100% - 20px); /* Adjusted width to account for padding */
+.signup-btn {
+  position: relative;
+  width: 100%;
   padding: 15px;
   border: none;
   border-radius: 25px;
+  background: linear-gradient(to bottom, #6e48aa, #4b2c7a);
+  color: #fff;
   font-family: Montserrat, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s;
   margin: 10px 0;
-}
-
-.signup-btn {
-  background: linear-gradient(to bottom, #6e48aa, #4b2c7a);
-  color: #fff;
 }
 
 .signup-btn:hover {
@@ -85,12 +81,20 @@ textarea {
 }
 
 .login-btn {
-  background-color: red;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: red; /* Red color */
   color: #fff;
+  font-family: Montserrat, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px 0;
 }
 
 .login-btn:hover {
-  background-color: darkred;
+  background-color: darkred; /* Darker red color on hover */
 }
 
 @keyframes rainbow {
