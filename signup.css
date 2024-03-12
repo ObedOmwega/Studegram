@@ -107,4 +107,8 @@ textarea {
   100% {
     background-position: 0 50%;
   }
+  footer {
+  text-align: center;
+  margin-top: 20px;
+}
 }
