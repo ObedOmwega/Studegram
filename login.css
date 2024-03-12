@@ -30,7 +30,7 @@ input[type="password"] {
     border-radius: 3px;
 }
 
-.login {
+.login-button {
     padding: 0.6em 2em;
     border: none;
     outline: none;
@@ -43,9 +43,11 @@ input[type="password"] {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    /* Add box-shadow for a subtle effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.login:before {
+.login-button:before {
     content: "";
     background: linear-gradient(
         45deg,
@@ -68,12 +70,12 @@ input[type="password"] {
     -webkit-filter: blur(5px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    animation: glowing-button-85 20s linear infinite;
+    animation: glowing-login-button 20s linear infinite;
     transition: opacity 0.3s ease-in-out;
     border-radius: 10px;
 }
 
-@keyframes glowing-login {
+@keyframes glowing-login-button {
     0% {
         background-position: 0 0;
     }
@@ -85,13 +87,13 @@ input[type="password"] {
     }
 }
 
-.login:after {
+.login-button:after {
     z-index: -1;
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #222;
+    background: #111; /* Adjust the background color for the glowing effect */
     left: 0;
     top: 0;
     border-radius: 10px;
