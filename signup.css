@@ -4,13 +4,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
 header {
   text-align: center;
   padding: 20px 0;
 }
+
 h1 {
   color: #333;
 }
+
 main {
   max-width: 600px;
   margin: 20px auto;
@@ -19,13 +22,16 @@ main {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 form {
   display: grid;
   grid-gap: 10px;
 }
+
 label {
   color: #555;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -36,90 +42,50 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 textarea {
   resize: vertical;
 }
+
 .signup-btn {
+  position: relative;
   width: 100%;
   padding: 15px;
   border: none;
-  border-radius: 5px;
-  background-color: violet;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #6e48aa, #4b2c7a);
   color: #fff;
+  font-family: Montserrat, sans-serif;
   cursor: pointer;
-}
-.signup-btn {
-  width: 100%;
-
-  padding: 15px;
-
-  border: none;
-
-  border-radius: 25px; /* Rounded corners */
-
-  background: linear-gradient(
-    to bottom,
-    #6e48aa,
-    #4b2c7a
-  ); /* Gradient background */
-
-  color: #fff; /* Text color */
-  font-family: Montserrat, sans-serif; /* Font family */
-  cursor: pointer;
-transition: background-color 0.3s; /* Smooth transition */
-
-  margin: 10px 0; /* Single-edge margin */
-
+  transition: background-color 0.3s;
+  margin: 10px 0;
 }
 
 .signup-btn:hover {
-
-  background: linear-gradient(to bottom, #573c87, #36254f); /* Darker shade on hover */
-
+  background: linear-gradient(to bottom, #573c87, #36254f);
 }
 
 .signup-btn::before {
-
   content: '';
-
   position: absolute;
-
-  top: -10px; /* Adjust this value to position the rainbow edge */
-
+  top: -10px;
   left: 0;
-
   width: 100%;
-
-  height: 10px; /* Height of the rainbow edge */
-
+  height: 10px;
   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-
   background-size: 200% auto;
-
-  border-radius: 25px 25px 0 0; /* Rounded corners only on the top */
-
-  animation: rainbow 1.5s infinite; /* Rainbow color alteration */
-
+  border-radius: 25px 25px 0 0;
+  animation: rainbow 1.5s infinite;
 }
 
 @keyframes rainbow {
-
   0% {
-
     background-position: 0 50%;
-
   }
-
   50% {
-
     background-position: 100% 50%;
-
   }
-
   100% {
-
     background-position: 0 50%;
-
   }
-
 }
