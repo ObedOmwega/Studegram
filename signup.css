@@ -3,6 +3,8 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+  background-image: url('https://ibb.co/GHxpVXP.jpg');
+  background-size: cover;
 }
 
 header {
@@ -40,7 +42,7 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px; /* slightly rounded edges */
 }
 
 textarea {
@@ -76,6 +78,23 @@ textarea {
   background-size: 200% auto;
   border-radius: 25px 25px 0 0;
   animation: rainbow 1.5s infinite;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: red; /* Red color */
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px 0;
+}
+
+.login-btn:hover {
+  background-color: darkred; /* Darker red color on hover */
 }
 
 @keyframes rainbow {
