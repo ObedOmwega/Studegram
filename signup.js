@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (isValid) {
       // All required fields are filled, proceed with submission
-      signUpForm.submit();
       signUpSuccess(); // Call the success function
     }
   });
@@ -38,4 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Redirect to a new page with success message and emoji
     window.location.href = 'successful.html';
   }
+
+  const loginButton = document.querySelector('.login-btn');
+
+  loginButton.addEventListener('click', function() {
+    window.location.href = 'login.html'; // Redirect to login.html when clicked
+  });
 });
