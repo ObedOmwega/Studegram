@@ -17,10 +17,10 @@ h1 {
 }
 
 main {
-  max-width: 600px;
+  max-width: 800px; /* Increased max-width for better alignment */
   margin: 20px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9); /* Added transparency to the background color */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -38,29 +38,33 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="file"],
+input[type="number"],
 textarea {
-  width: 100%;
+  width: calc(100% - 20px); /* Adjusted width to account for padding */
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px; /* slightly rounded edges */
+  border-radius: 8px;
 }
 
 textarea {
   resize: vertical;
 }
 
-.signup-btn {
-  position: relative;
-  width: 100%;
+.signup-btn,
+.login-btn {
+  width: calc(100% - 20px); /* Adjusted width to account for padding */
   padding: 15px;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(to bottom, #6e48aa, #4b2c7a);
-  color: #fff;
   font-family: Montserrat, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s;
   margin: 10px 0;
+}
+
+.signup-btn {
+  background: linear-gradient(to bottom, #6e48aa, #4b2c7a);
+  color: #fff;
 }
 
 .signup-btn:hover {
@@ -81,20 +85,12 @@ textarea {
 }
 
 .login-btn {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  border-radius: 25px;
-  background-color: red; /* Red color */
+  background-color: red;
   color: #fff;
-  font-family: Montserrat, sans-serif;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin: 10px 0;
 }
 
 .login-btn:hover {
-  background-color: darkred; /* Darker red color on hover */
+  background-color: darkred;
 }
 
 @keyframes rainbow {
